@@ -1,0 +1,24 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": ""
+            }
+        ],
+        "BugReportUrl": "",
+        "Category": "System",
+        "Description": "",
+        "Icon": "folder-chart-symbolic",
+        "Id": "org.kde.plasma.gridstatus",
+        "License": " ",
+        "Name": "Grid Status",
+        "Website": "",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.systemmonitor"
+    ]
+}

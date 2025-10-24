@@ -1,7 +1,6 @@
 import QtQuick
 import org.kde.plasma.plasmoid
 import org.kde.plasma.core as PlasmaCore
-import org.kde.plasma.private.timer as Exec
 
 PlasmoidItem {
     id: root
@@ -14,18 +13,4 @@ PlasmoidItem {
     fullRepresentation: Item {}
 
     Plasmoid.backgroundHints: PlasmaCore.Types.ShadowBackground
-
-    MouseArea {
-        anchors.fill: parent
-        acceptedButtons: Qt.MiddleButton
-        onClicked: Exec.Timer.runCommand("plasma-systemmonitor")
-    }
-
-    Plasmoid.contextualActions: [
-        PlasmaCore.Action {
-            text: "Open System Monitor"
-            icon.name: "utilities-system-monitor"
-            onTriggered: Exec.Timer.runCommand("plasma-systemmonitor")
-        }
-    ]
 }

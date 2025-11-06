@@ -23,7 +23,7 @@ GridLayout {
         "#f55ffb", "#f65efb", "#f75dfc", "#f85cfc", "#f95afc", "#fa59fd", "#fb58fd", "#fc56fe", "#fd55fe", "#fe53ff",
         "#ff52ff"]
 
-    readonly property int fontSize: root.inPanel ? Math.ceil(textMetrics.font.pixelSize / textMetrics.height * height * 0.5) : 20
+    readonly property int fontSize: root.inPanel ? Math.ceil(height * 0.4) : 20
     readonly property string fontFamily: "Consolas"
 
     function leftPad(reading) {
